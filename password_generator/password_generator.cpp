@@ -16,6 +16,7 @@ std::string generatePassword(int length = 4) {
     // Use current time as seed for random generator
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
 
+
     // Build password with random characters
     for (int i = 0; i < length; ++i) {
         int randomIndex = std::rand() % chars.length(); // Generate a random index
